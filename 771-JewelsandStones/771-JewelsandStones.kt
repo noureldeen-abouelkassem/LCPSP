@@ -3,3 +3,4 @@ class Solution {
         return command.replace("()", "o").replace("(al)", "al")
     }
 }
+"G()(al)"
