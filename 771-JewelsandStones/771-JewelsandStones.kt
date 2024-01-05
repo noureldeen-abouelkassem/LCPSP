@@ -1,7 +1,5 @@
 class Solution {
-    fun numJewelsInStones(jewels: String, stones: String): Int {
-        return stones.filter {
-            it in jewels
-        }.length
+    fun interpret(command: String): String {
+        return command.replace("()", "o").replace("(al)", "al")
     }
 }
