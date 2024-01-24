@@ -1,21 +1,16 @@
-        var indexCounter = 0
-        for (c in stringOfBinaryRepresentation) {
-            when (c) {
-                '/' -> {
-                    hashMapOfIndexAndBitCount[indexCounter] = counter
-                    indexCounter++
-                    counter = 0
-                }
-
-                '1' -> counter++
-            }
-        }
-        hashMapOfIndexAndBitCount.forEach { (t, u) ->
-            if(u == k){
-                println(nums[t])
-                result += nums[t]
             }
         }
         return result
+                result += nums[t]
+            if(u == k){
+        hashMapOfIndexAndBitCount.forEach { (t, u) ->
+        }
+            hashMapOfIndexAndBitCount[index] = Integer.bitCount(index)
+        val hashMapOfIndexAndBitCount = hashMapOf<Int, Int>()
+        nums.forEachIndexed { index, i ->
+        var result = 0
+    fun sumIndicesWithKSetBits(nums: List<Int>, k: Int): Int {
+class Solution {
     }
+}
 [
