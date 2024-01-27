@@ -1,15 +1,6 @@
 class Solution {
     fun countNegatives(grid: Array<IntArray>): Int {
-        val bigArray = mutableListOf<Int>()
-        grid.forEach {
-            bigArray.addAll(it.toList())
-        }
-        var negativeCount = 0
-        bigArray.forEach {
-            if(it < 0)
-                negativeCount++
-        }
-        return negativeCount
+        return grid.sumBy { it.count { it < 0 } }
     }
 }
-[
+[[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
