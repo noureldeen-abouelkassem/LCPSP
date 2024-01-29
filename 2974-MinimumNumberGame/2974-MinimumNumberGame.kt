@@ -1,12 +1,12 @@
 class Solution {
     fun numberGame(nums: IntArray): IntArray {
-        val numsSorted = nums.sorted()
-        val result = mutableListOf<Int>()
-        for (i in 1..numsSorted.lastIndex step 2) {
-            result.add(numsSorted[i])
-            result.add(numsSorted[i - 1])
+         nums.sort()
+        for (i in 0 until nums.lastIndex step 2) {
+            val temp = nums[i]
+            nums[i] = nums[i + 1]
+            nums[i+1] = temp
         }
-        return result.toIntArray()
+        return nums
     }
 }
 [
