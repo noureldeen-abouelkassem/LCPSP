@@ -5,7 +5,10 @@ class Solution {
             alphabeticSet.add(c)
         }
         val sentenceUniqueChars = sentence.lowercase().toCharArray().toSet()
-        return sentenceUniqueChars.containsAll(alphabeticSet)
+        sentenceUniqueChars.forEach { 
+            alphabeticSet.remove(it)
+        }
+        return alphabeticSet.isEmpty()
     }
 }
 "
