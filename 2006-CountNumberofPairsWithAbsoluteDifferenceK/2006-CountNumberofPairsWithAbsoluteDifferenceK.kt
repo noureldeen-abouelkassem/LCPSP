@@ -1,13 +1,13 @@
 class Solution {
     fun countKDifference(nums: IntArray, k: Int): Int {
-        val pairings = nums
-            .groupBy { it - k }
-        val pairsCount = nums
-            .sumOf {
-                pairings.getOrDefault(it, emptyList())
-                    .size
+        var pairs = 0
+        for (i in 0 until nums.size) {
+            for (j in i + 1 until nums.size) {
+                if (abs(nums[i] - nums[j]) == k)
+                    ++pairs
             }
-        return pairsCount
+        }
+        return pairs
     }
 }
 [
