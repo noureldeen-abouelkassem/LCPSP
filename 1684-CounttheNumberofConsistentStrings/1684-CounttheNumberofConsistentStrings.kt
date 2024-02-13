@@ -1,8 +1,9 @@
 class Solution {
     fun countConsistentStrings(allowed: String, words: Array<String>): Int {
+        val allowedSorted = allowed.toCharArray().sorted()
         return words.count {
-            it.toCharArray().subtract(allowed.toCharArray().toList().toSet()).isEmpty()
-        }
+            allowedSorted.containsAll(it.toSet().sorted())
     }
+        }
 }
 "
