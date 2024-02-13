@@ -1,8 +1,17 @@
-class Solution {
-        fun countConsistentStrings(allowed: String, words: Array<String>): Int {
-        val allowedSorted = allowed.toCharArray().sorted()
-        return words.map { it.toSet() }.map { it.sorted() }.count { allowedSorted.containsAll(it) }
+            bitset = bitset or (1 shl (char - 'a'))
+        }
 
+        for(word in words) {
+            for(char in word.toCharArray()) {
+                if(bitset and (1 shl (char - 'a')) == 0) {
+                    count--
+                    break
+                }
+            }
+        }
+    
+        return count
     }
+
 }
 "
