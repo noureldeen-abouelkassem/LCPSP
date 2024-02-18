@@ -1,4 +1,11 @@
 class Solution {
-    fun firstPalindrome(words: Array<String>): String =  words.firstOrNull { it.reversed() == it } ?: ""
+    fun firstPalindrome(words: Array<String>): String {
+        for(i in words) {
+            if(i.reversed() == i) {
+                return i
+            }
+        }
+        return ""
+    }
 }
 [
