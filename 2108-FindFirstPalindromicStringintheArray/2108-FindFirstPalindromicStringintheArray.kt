@@ -1,11 +1,6 @@
-        return ""
-        }
-            }
 class Solution {
-    fun firstPalindrome(words: Array<String>): String {
-        for (word in words) {
-            if (word == word.reversed()) {
-                return word
-    }
+    fun firstPalindrome(words: Array<String>): String = words.firstOrNull { w ->
+        (0..w.length / 2).all { w[it] == w[w.lastIndex - it] }
+      } ?: ""
 }
 [
