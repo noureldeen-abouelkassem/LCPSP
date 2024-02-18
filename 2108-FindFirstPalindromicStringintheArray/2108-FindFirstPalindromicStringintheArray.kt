@@ -1,16 +1,11 @@
-            secondHalf = word.slice(
-                (word.length / 2).inc() until word.length
-            )
+        return ""
         }
-        return firstHalf == secondHalf.reversed()
+            }
+class Solution {
+    fun firstPalindrome(words: Array<String>): String {
+        for (word in words) {
+            if (word == word.reversed()) {
+                return word
     }
 }
-            )
-            secondHalf = word.slice(
-                word.length / 2 until word.length
-            )
-        } else {
-            firstHalf = word.slice(
-                0 until word.length / 2
-            )
 [
