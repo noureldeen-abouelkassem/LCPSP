@@ -1,20 +1,20 @@
-            }else{
-                reversedWord += character
-                reversedWord = ""
-                reversedArray.add(reversedWord)
-            if (character == '-') {
-            val character = string[i]
-            }
-            if (i == 0){
-                reversedArray.add(reversedWord)
-            }
-        }
-        reversedArray.reverse()
-        for (i in 0 .. words.lastIndex){
-            if(words[i]==reversedArray[i]){
-                return reversedArray[i]
-            }
-        }
-        return ""
+                word.length / 2 until word.length
+            )
+            secondHalf = word.slice(
+            firstHalf = word.slice(
+                0 until word.length / 2
+        if (word.length % 2 == 0) {
+        val secondHalf: String
+        val firstHalf: String
+     private fun isWordPalindrome(word: String): Boolean {
     }
-["abc","car","ada","racecar","cool"]
+        return ""
+        }
+            }
+                return word
+            if (isWordPalindrome(word)) {
+        for (word in words) {
+    fun firstPalindrome(words: Array<String>): String {
+class Solution {
+    
+[
