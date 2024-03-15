@@ -1,10 +1,6 @@
 class Solution {
     fun theMaximumAchievableX(num: Int, t: Int): Int {
-       var result = num
-        repeat(2){
-            result += t
-        }
-        return result
+        return num + t * 2
     }
 }
 4
