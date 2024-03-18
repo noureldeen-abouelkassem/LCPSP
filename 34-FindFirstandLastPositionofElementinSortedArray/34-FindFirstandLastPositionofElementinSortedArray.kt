@@ -1,17 +1,14 @@
 
-        var first = nums.binarySearch(target, 0, nums.size)
-        var last = first
-
-        while (first >= 0) {
-            result[0] = first
-            first = nums.binarySearch(target, 0, first)
+        while (start <= end) {
+            val middle = start + (end - start) / 2
+            if (nums[middle] <= target) {
+                start = middle + 1
+                if (nums[middle] == target) result = middle
+            } else {
+                end = middle - 1
+            }
         }
-
-        while (last >= 0) {
-            result[1] = last
-            last = nums.binarySearch(target, last + 1, nums.size)
-        }
-
         return result
     }
+}
 [
