@@ -1,6 +1,6 @@
 class Solution {
     fun search(nums: IntArray, target: Int): Int {
-         return nums.find { it == target } ?: -1
-    }
+         return nums.indexOfFirst { it == target }
+         }
 }
 [
