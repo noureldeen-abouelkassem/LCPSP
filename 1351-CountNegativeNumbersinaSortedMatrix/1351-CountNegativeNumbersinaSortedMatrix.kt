@@ -5,13 +5,13 @@
         var start = 0
     private fun countNegativeNumbers(arr: IntArray): Int{
 
-        return result
     }
+        return result
         }
-            println(countNegativeNumbers(it))
             result += it.size - countNegativeNumbers(it)
         grid.forEach {
         var result = 0
     fun countNegatives(grid: Array<IntArray>): Int {
 class Solution {
+                start = middle.plus(1)
 [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
