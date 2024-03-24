@@ -10,9 +10,8 @@
         return end
     }
 
-    private fun sumOfNumbersBefore(n: Int): Int {
+    private fun sumOfNumbersBefore(n: Long): Long {
         return n * (n + 1) / 2
     }
-            if(sumOfNumbersBefore == n){
-            val sumOfNumbersBefore = sumOfNumbersBefore(middle)
+}
 5
