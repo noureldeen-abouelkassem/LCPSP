@@ -1,5 +1,3 @@
-class Solution {
-    fun isPowerOfFour(n: Int): Boolean {
             return powerCheck(1, n)
     }
 
@@ -8,10 +6,12 @@ class Solution {
             true
         else if (4.0.pow(current) < target.toDouble())
             powerCheck(current.plus(1), target)
+        else
             false
     }
-        else
-        if(n == 1) 
+}
         else
             return true
+        if(n == 1) 
+            return false
 1
