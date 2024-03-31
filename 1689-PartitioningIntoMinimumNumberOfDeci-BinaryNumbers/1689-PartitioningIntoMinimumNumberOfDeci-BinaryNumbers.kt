@@ -1,10 +1,11 @@
-       var num  = '0'
+class Solution {
+    fun minPartitions(n: String): Int {
+       var num  = 0
             n.forEach {
-                if (it > num) num = it
+                val digit = it.digitToInt()
+                if (digit > num) num = digit
             }
         return num
     }
 }
-    fun minPartitions(n: String): Int {
-class Solution {
 "
