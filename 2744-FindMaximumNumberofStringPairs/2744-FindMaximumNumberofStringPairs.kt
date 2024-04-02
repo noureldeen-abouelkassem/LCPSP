@@ -1,4 +1,3 @@
-    fun maximumNumberOfStringPairs(words: Array<String>): Int {
         val hashMap = hashMapOf<String,Int>()
         var count = 0
         for(word in words) {
@@ -9,5 +8,6 @@
             }
         }
         return count
+    }
 }
 [
