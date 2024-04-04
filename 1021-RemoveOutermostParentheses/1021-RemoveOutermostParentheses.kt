@@ -1,13 +1,14 @@
-            } else {
-                openParenthesesCounter --
-                openParenthesesCounter ++
-                }
-                    startPointer = index
-                if(openParenthesesCounter == 0){
-            if(c == '('){
-        s.forEachIndexed { index, c ->
-        val newString = StringBuilder()
-        var startPointer = 0
-        var openParenthesesCounter = 0
-    fun removeOuterParentheses(s: String): String {
+Â Â Â Â Â Â Â Â Â Â Â Â }Â elseÂ {
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â openParenthesesCounterÂ --
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â openParenthesesCounterÂ ++
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â }
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â startPointerÂ =Â index
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â if(openParenthesesCounterÂ ==Â 0){
+Â Â Â Â Â Â Â Â Â Â Â Â if(cÂ ==Â '('){
+Â Â Â Â Â Â Â Â s.forEachIndexedÂ {Â index,Â cÂ ->
+Â Â Â Â Â Â Â Â valÂ newStringÂ =Â StringBuilder()
+Â Â Â Â Â Â Â Â varÂ startPointerÂ =Â 0
+Â Â Â Â Â Â Â Â varÂ openParenthesesCounterÂ =Â 0
+
+Â Â Â Â funÂ removeOuterParentheses(s:Â String):Â StringÂ {
 "
