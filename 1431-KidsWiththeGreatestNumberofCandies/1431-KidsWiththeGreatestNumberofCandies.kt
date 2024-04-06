@@ -1,17 +1,16 @@
-        var highestNumber = 0
-        candies.forEach {
-            if (highestNumber < it)
-                highestNumber = it
-        }
-        var list = mutableListOf<Boolean>()
-        candies.forEach {
-            if ((it + extraCandies) >= highestNumber) {
-                list.add(true)
-            } else {
-                list.add(false)
-            }
-        }
-        return list
-    }
+Â Â Â Â Â Â Â Â varÂ highestNumberÂ =Â 0
+Â Â Â Â Â Â Â Â candies.forEachÂ {
+Â Â Â Â Â Â Â Â Â Â Â Â ifÂ (highestNumberÂ <Â it)
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â highestNumberÂ =Â it
+Â Â Â Â Â Â Â Â }
+Â Â Â Â Â Â Â Â varÂ listÂ =Â mutableListOf<Boolean>()
+Â Â Â Â Â Â Â Â candies.forEachÂ {
+Â Â Â Â Â Â Â Â Â Â Â Â ifÂ ((itÂ +Â extraCandies)Â >=Â highestNumber)Â {
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â list.add(true)
+Â Â Â Â Â Â Â Â Â Â Â Â }Â elseÂ {
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â list.add(false)
+Â Â Â Â Â Â Â Â Â Â Â Â }
+Â Â Â Â Â Â Â Â }
+Â Â Â Â Â Â Â Â returnÂ list
+Â Â Â Â }
 }
-[
