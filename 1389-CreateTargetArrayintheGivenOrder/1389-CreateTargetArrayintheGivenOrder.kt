@@ -1,10 +1,9 @@
-class Solution {
-    fun createTargetArray(nums: IntArray, index: IntArray): IntArray {
-        val result = mutableListOf<Int>()
-        index.forEachIndexed { pointer, i ->
-            result.add(i, nums[pointer])
-        }
-        return result.toIntArray()
-    }
+classÂ SolutionÂ {
+Â Â Â Â funÂ createTargetArray(nums:Â IntArray,Â index:Â IntArray):Â IntArrayÂ {
+Â Â Â Â Â Â Â Â valÂ resultÂ =Â mutableListOf<Int>()
+Â Â Â Â Â Â Â Â index.forEachIndexedÂ {Â pointer,Â iÂ ->
+Â Â Â Â Â Â Â Â Â Â Â Â result.add(i,Â nums[pointer])
+Â Â Â Â Â Â Â Â }
+Â Â Â Â Â Â Â Â returnÂ result.toIntArray()
+Â Â Â Â }
 }
-[
