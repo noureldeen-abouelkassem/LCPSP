@@ -1,13 +1,13 @@
-class Solution {
-    fun singleNonDuplicate(nums: IntArray): Int {
-        var start = 0
-        var end = nums.lastIndex
-        while (start < end) {
-            when {
-                nums[start] == nums[start.plus(1)] -> start += 2
-                nums[end] == nums[end.minus(1)] -> end -= 2
+                }
+                else -> {
+                    if(nums[mid] == nums[mid-1])
+                        low = mid+1
+                    else
+                        high = mid
+                }
+                
             }
         }
-        return nums[start]
+        return -1
     }
 [
