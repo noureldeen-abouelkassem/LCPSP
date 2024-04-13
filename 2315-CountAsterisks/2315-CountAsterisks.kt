@@ -1,8 +1,12 @@
 class Solution {
     fun countAsterisks(s: String): Int {
-         return s.split("\\|[^|]*\\|".toRegex())
+         var barCount = 0
+        var astrikCount = 0
+        s.forEach {
+            if (it == '|') barCount++
+            if (barCount % 2 == 0 && it == '*') astrikCount++
+        }
+        return astrikCount
     }
-         .filter { it.isEmpty().not() }
-         .sumOf { it.count { char ->  char == '*' } }
 }
 "
