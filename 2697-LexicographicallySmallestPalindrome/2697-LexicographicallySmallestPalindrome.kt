@@ -1,17 +1,14 @@
 class Solution {
     fun makeSmallestPalindrome(s: String): String {
-        var j = s.lastIndex
-        val result = s.toMutableList()
-        for(index in 0 .. s.lastIndex/2){
-            if (result[index] != result[j]) {
-                if(result[index] > result[j]){
-                } else {
-                    result[j] = result[index]
-                }
-            }
-                    result[index] = result[j]
-            j--
+        val result = s.toCharArray()
+        var l = 0
+        var r = result.lastIndex
+        while (l < r) {
+            result[l++] = min
+            result[r--] = min
         }
-        return result.joinToString("")
+        return String(result)
+            val min = minOf(result[r], result[l])
     }
+}
 "
