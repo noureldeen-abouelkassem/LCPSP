@@ -1,13 +1,17 @@
-      when(sandwiche) {
-        0 -> if (circleStudentCount > 0) circleStudentCount-- else break
-        1 -> if (squareStudentCOunt > 0) squareStudentCOunt-- else break
-      }
-    }
+        while (couldntServe < students.size && !studentsQueue.isEmpty()) {
+            val studentHead = studentsQueue.poll()
+            val match = studentHead == sandwichesQueue.peek()
+            if (match) {
+                sandwichesQueue.poll()
+                couldntServe = 0
+            } else {
 
-    return circleStudentCount + squareStudentCOunt
-    }
-}
-    var squareStudentCOunt = students.filter { it == 1 }.size
+        var couldntServe = 0
+                studentsQueue.add(studentHead)
+                couldntServe++
+            }
+        }
 
-    for (sandwiche in sandwiches) {
+        return studentsQueue.size
+    }
 [
