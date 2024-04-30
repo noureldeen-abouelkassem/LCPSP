@@ -5,13 +5,13 @@
     private fun binarySearch(arr: IntArray, target: Int): Boolean {
 
     }
-        return result
+        return binarySearch(array.toIntArray(), target)
         }
-            arrayIndex++
-            result = binarySearch(matrix[arrayIndex], target)
-        while (result.not() && arrayIndex < matrix.size) {
-        var arrayIndex = 0
-        var result = false
+            list
+            list.addAll(list2.toList())
+        val array = matrix.fold(mutableListOf<Int>()){ list, list2 -> 
     fun searchMatrix(matrix: Array<IntArray>, target: Int): Boolean {
 class Solution {
+            when {
+                arr[middle] == target -> return true
 [
