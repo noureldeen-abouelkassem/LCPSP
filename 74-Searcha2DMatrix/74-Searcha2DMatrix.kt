@@ -1,17 +1,17 @@
-        while (start <= end) {
-        var end = arr.lastIndex
-            val middle = start + (end - start) / 2
-        var start = 0
-    private fun binarySearch(arr: IntArray, target: Int): Boolean {
-
-    }
-        return binarySearch(array.toIntArray(), target)
+            else return true
         }
-            list
-            list.addAll(list2.toList())
-        val array = matrix.fold(mutableListOf<Int>()){ list, list2 -> 
+
+            else if (num < target) i = mid + 1
+            if (num > target) j = mid - 1
+            val num = matrix[mid/col][mid%col]
+        while (i <= j) {
+            val mid = i + (j - i) / 2
+        
+        var j = row*col - 1
+        
+        var i = 0
+        val col = matrix[0].size
+        val row = matrix.size
     fun searchMatrix(matrix: Array<IntArray>, target: Int): Boolean {
 class Solution {
-            when {
-                arr[middle] == target -> return true
 [
