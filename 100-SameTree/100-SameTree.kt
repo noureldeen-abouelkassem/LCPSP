@@ -1,17 +1,18 @@
- *     var left: TreeNode? = null
- *     var right: TreeNode? = null
- * }
- */
-class Solution {
-    fun isSameTree(p: TreeNode?, q: TreeNode?): Boolean {
-        if (p==null && q==null) return true
-        if (p==null && q!=null || p!=null && q==null) return false
-        if (p!!.`val` != q!!.`val`) return false
- * Definition for a binary tree node.
- * class TreeNode(var `val`: Int) {
-        if (p.left==null && q.left!=null || p.left!=null && q.left==null) return false
-        if (p.right==null && q.right!=null || p.right!=null && q.right==null) return false
-        return (isSameTree(p.left, q.left) && isSameTree(p.right, q.right))
-    }
+Â *Â Â Â Â Â varÂ left:Â TreeNode?Â =Â null
+Â *Â Â Â Â Â varÂ right:Â TreeNode?Â =Â null
+Â *Â }
+Â */
+classÂ SolutionÂ {
+Â Â Â Â funÂ isSameTree(p:Â TreeNode?,Â q:Â TreeNode?):Â BooleanÂ {
+Â Â Â Â Â Â Â Â ifÂ (p==nullÂ &&Â q==null)Â returnÂ true
+Â Â Â Â Â Â Â Â ifÂ (p==nullÂ &&Â q!=nullÂ ||Â p!=nullÂ &&Â q==null)Â returnÂ false
+Â Â Â Â Â Â Â Â ifÂ (p!!.`val`Â !=Â q!!.`val`)Â returnÂ false
+Â *Â DefinitionÂ forÂ aÂ binaryÂ treeÂ node.
+Â *Â classÂ TreeNode(varÂ `val`:Â Int)Â {
+Â Â Â Â Â Â Â Â ifÂ (p.left==nullÂ &&Â q.left!=nullÂ ||Â p.left!=nullÂ &&Â q.left==null)Â returnÂ false
+Â Â Â Â Â Â Â Â ifÂ (p.right==nullÂ &&Â q.right!=nullÂ ||Â p.right!=nullÂ &&Â q.right==null)Â returnÂ false
+Â Â Â Â Â Â Â Â returnÂ (isSameTree(p.left,Â q.left)Â &&Â isSameTree(p.right,Â q.right))
+Â Â Â Â }
 }
 [
+
