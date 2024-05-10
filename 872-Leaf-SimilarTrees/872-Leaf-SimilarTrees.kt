@@ -1,18 +1,17 @@
-    }
-        return checkIdentical(root1Leafs, root2Leafs)
-        node2Leafs(root2)
-        node1Leafs(root1)
-
-    private fun checkIdentical(root1Leafs: ArrayDeque<Int>, root2Leafs: ArrayDeque<Int>): Boolean {
-        var result = true
-        root1Leafs.forEachIndexed { index, i -> 
-            if(root2Leafs.getOrNull(index) != i)
-                result = false
-        }
-        return result
-    }
-
-    private fun node1Leafs(root: TreeNode?) {
-        if (root == null) return
-        if(root1Leafs.size != root2Leafs.size) return false
+       leafNodes(root2, leaves2)
+       val leaves2 = mutableListOf<Int>()
+       leafNodes(root1, leaves1)
+       val leaves1 = mutableListOf<Int>()
+    fun leafSimilar(root1: TreeNode?, root2: TreeNode?): Boolean {
+class Solution {
+ */
+ * }
+ *     var right: TreeNode? = null
+ *     var left: TreeNode? = null
+ * class TreeNode(var `val`: Int) {
+ * Definition for a binary tree node.
+ * var v = ti.`val`
+ * var ti = TreeNode(5)
+ * Example:
+/**
 [
