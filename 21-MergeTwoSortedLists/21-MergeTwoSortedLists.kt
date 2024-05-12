@@ -14,6 +14,5 @@
 ��������return�list2
 ��������if�(list1�==�null�&&�list2�==�null)�{
 ����fun�mergeTwoLists(list1:�ListNode?,�list2:�ListNode?):�ListNode?�{
-
     }
 [
