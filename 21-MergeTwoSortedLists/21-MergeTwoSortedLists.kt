@@ -1,17 +1,19 @@
-        if (list1 == null) {
-            return null
-        }
-            return list2
-        }
-        if (list2 == null) {
-            return list1
-        }
-        if (list1.`val` < list2.`val`) {
-            list1.next = mergeTwoLists(list1.next, list2)
-            return list1
-        }
-        list2.next = mergeTwoLists(list2.next, list1)
-        return list2
-        if (list1 == null && list2 == null) {
-    fun mergeTwoLists(list1: ListNode?, list2: ListNode?): ListNode? {
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ifï¿½(list1ï¿½==ï¿½null)ï¿½{
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½returnï¿½null
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½}
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½returnï¿½list2
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½}
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ifï¿½(list2ï¿½==ï¿½null)ï¿½{
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½returnï¿½list1
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½}
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ifï¿½(list1.`val`ï¿½<ï¿½list2.`val`)ï¿½{
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½list1.nextï¿½=ï¿½mergeTwoLists(list1.next,ï¿½list2)
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½returnï¿½list1
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½}
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½list2.nextï¿½=ï¿½mergeTwoLists(list2.next,ï¿½list1)
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½returnï¿½list2
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ifï¿½(list1ï¿½==ï¿½nullï¿½&&ï¿½list2ï¿½==ï¿½null)ï¿½{
+ï¿½ï¿½ï¿½ï¿½funï¿½mergeTwoLists(list1:ï¿½ListNode?,ï¿½list2:ï¿½ListNode?):ï¿½ListNode?ï¿½{
+
+    }
 [
