@@ -1,16 +1,17 @@
- * class ListNode(var `val`: Int) {
- *     var next: ListNode? = null
- * }
- */
-class Solution {
-    fun getDecimalValue(head: ListNode?): Int {
-        var result = 0
-        var currentNode = head
-        while (currentNode != null) {
-            result *= 2
-            result += currentNode.`val`
-            currentNode = currentNode.next
-        }
-        return result
-    }
+Â *Â classÂ ListNode(varÂ `val`:Â Int)Â {
+Â *Â Â Â Â Â varÂ next:Â ListNode?Â =Â null
+Â *Â }
+Â */
+classÂ SolutionÂ {
+Â Â Â Â funÂ getDecimalValue(head:Â ListNode?):Â IntÂ {
+Â Â Â Â Â Â Â Â varÂ resultÂ =Â 0
+Â Â Â Â Â Â Â Â varÂ currentNodeÂ =Â head
+Â Â Â Â Â Â Â Â whileÂ (currentNodeÂ !=Â null)Â {
+Â Â Â Â Â Â Â Â Â Â Â Â resultÂ *=Â 2
+Â Â Â Â Â Â Â Â Â Â Â Â resultÂ +=Â currentNode.`val`
+Â Â Â Â Â Â Â Â Â Â Â Â currentNodeÂ =Â currentNode.next
+Â Â Â Â Â Â Â Â }
+Â Â Â Â Â Â Â Â returnÂ result
+
+Â Â Â Â }
 [
