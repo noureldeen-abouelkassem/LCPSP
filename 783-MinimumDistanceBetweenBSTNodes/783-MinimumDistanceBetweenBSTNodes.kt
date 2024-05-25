@@ -6,18 +6,19 @@
  * }
  */
 class Solution {
+    var res = Int.MAX_VALUE
+    var prev = -100000
     fun minDiffInBST(root: TreeNode?): Int {
-        var res = Int.MAX_VALUE
-        var prev = -100000
-        fun dfs(node: TreeNode?) {
-            if (node == null || res == 1) return
-            dfs(node.left)
-            res = minOf(res, node.`val` - prev)
-            prev = node.`val`
-            dfs(node.right)
-        }
-        dfs(root)
+        rec(root)
         return res
+    }
+
+    fun rec(node: TreeNode?) {
+        if (node == null || res == -1) return
+        rec(node.left)
+        res = minOf(res, node.`val` - prev)
+        prev = node.`val`
+        rec(node.right)
     }
 }
 [
