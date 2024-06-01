@@ -1,0 +1,16 @@
+        } else {
+            return s
+        }
+    }
+
+    private fun getLetter(prev: Char?, next: Char?): Char {
+        val alphabets = ('a'..'z').toMutableList()
+        alphabets.remove(prev)
+        alphabets.remove(next)
+        return alphabets.random()
+getOrNull(indexOf.plus(1)))))
+            return modifyString(s.replaceFirst('?', getLetter(s.getOrNull(indexOf.minus(1)), s.
+            val indexOf = s.indexOfFirst { it == '?' }
+    }
+}
+"
