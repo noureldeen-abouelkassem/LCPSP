@@ -1,15 +1,12 @@
 class Solution {
     fun containsDuplicate(nums: IntArray): Boolean {
-        var leftPointer = 0
-        var rightPointer = nums.lastIndex
-        while(leftPointer < rightPointer){
-            if(nums[leftPointer] == nums[rightPointer]){
+        val sortedNums = nums.sorted()
+        for(i in 1..nums.lastIndex) {
+            if(sortedNums[i.minus(1)] == sortedNums[i]){
                 return true
             }
         }
     }
-            leftPointer ++
-            rightPointer --
         return false
 }
 [
