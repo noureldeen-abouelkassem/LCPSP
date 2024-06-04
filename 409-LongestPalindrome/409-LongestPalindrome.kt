@@ -1,6 +1,5 @@
 class Solution {
     fun longestPalindrome(s: String): Int {
-        if(s.toSet().size == 1) return s.length
         val hash = mutableMapOf<Char, Int>()
         for (ch in s) {
             hash[ch] = hash.getOrDefault(ch, 0) + 1
