@@ -4,9 +4,9 @@ class Solution {
         if (s.toSet().size == 1) return true
         var windowEnd = 1
         while (windowEnd < s.lastIndex) {
-            if(s.split(s.substring(windowEnd.plus(1)..s.lastIndex)).any { it.isNotEmpty() }){
+            if(s.substring(windowEnd.plus(1)..s.lastIndex).split(s.substring(0..windowEnd)).any { it.
                 windowEnd++
             } else {
                 return true
-            }
+isNotEmpty() }){
 "
