@@ -1,12 +1,13 @@
-        for (i in 0 .. heights.lastIndex) {
-            if(sorted[i] != heights[i]){
-            }
-        }
-    }
-                result += 1
-        var sorted = heights.sorted()
-        var result = 0 
-    fun heightChecker(heights: IntArray): Int {
-        return result
+Â Â Â Â Â Â Â Â forÂ (iÂ inÂ 0Â ..Â heights.lastIndex)Â {
+Â Â Â Â Â Â Â Â Â Â Â Â if(sorted[i]Â !=Â heights[i]){
+Â Â Â Â Â Â Â Â Â Â Â Â }
+Â Â Â Â Â Â Â Â }
+Â Â Â Â }
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â resultÂ +=Â 1
+Â Â Â Â Â Â Â Â varÂ sortedÂ =Â heights.sorted()
+Â Â Â Â Â Â Â Â varÂ resultÂ =Â 0Â 
+Â Â Â Â funÂ heightChecker(heights:Â IntArray):Â IntÂ {
+Â Â Â Â Â Â Â Â returnÂ result
 }
 [
+
