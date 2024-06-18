@@ -1,14 +1,14 @@
-class Solution {
-    fun maxProfit(prices: IntArray): Int {
-        var maxProfit = 0
-        var minimum = Int.MAX_VALUE
-        for(p in prices) {
-            if(p < minimum){
-                minimum = p
-        }
-    }
-            }
-            maxProfit = Math.max(maxProfit, p-minimum)
-        return maxProfit
+classÂ SolutionÂ {
+Â Â Â Â funÂ maxProfit(prices:Â IntArray):Â IntÂ {
+Â Â Â Â Â Â Â Â varÂ maxProfitÂ =Â 0
+Â Â Â Â Â Â Â Â varÂ minimumÂ =Â Int.MAX_VALUE
+Â Â Â Â Â Â Â Â for(pÂ inÂ prices)Â {
+Â Â Â Â Â Â Â Â Â Â Â Â if(pÂ <Â minimum){
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â minimumÂ =Â p
+Â Â Â Â Â Â Â Â }
+Â Â Â Â }
+Â Â Â Â Â Â Â Â Â Â Â Â }
+Â Â Â Â Â Â Â Â Â Â Â Â maxProfitÂ =Â Math.max(maxProfit,Â p-minimum)
+Â Â Â Â Â Â Â Â returnÂ maxProfit
 }
 [
