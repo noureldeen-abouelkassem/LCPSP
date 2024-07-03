@@ -12,6 +12,5 @@
             val left = numsSorted[leftPointer]
         while(leftPointer < rightPointer){
 {it == right})
-
 }
 [
