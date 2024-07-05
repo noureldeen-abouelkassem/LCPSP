@@ -1,13 +1,14 @@
-        var end = nums.lastIndex
-        while (start <= end) {
-            val middle = start + (end - start) / 2
-            when {
-                nums[middle] == target -> return middle
-                nums[middle] > target -> end = middle - 1
-                nums[middle] < target -> start = middle + 1
-            }
-        }
-        return -1
-    }
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½varï¿½endï¿½=ï¿½nums.lastIndex
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½whileï¿½(startï¿½<=ï¿½end)ï¿½{
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½valï¿½middleï¿½=ï¿½startï¿½+ï¿½(endï¿½-ï¿½start)ï¿½/ï¿½2
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½whenï¿½{
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½nums[middle]ï¿½==ï¿½targetï¿½->ï¿½returnï¿½middle
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½nums[middle]ï¿½>ï¿½targetï¿½->ï¿½endï¿½=ï¿½middleï¿½-ï¿½1
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½nums[middle]ï¿½<ï¿½targetï¿½->ï¿½startï¿½=ï¿½middleï¿½+ï¿½1
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½}
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½}
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½returnï¿½-1
+ï¿½ï¿½ï¿½ï¿½}
 }
+
 [4,5,6,7,0,1,2]
