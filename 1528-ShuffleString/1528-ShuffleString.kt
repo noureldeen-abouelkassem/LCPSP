@@ -1,16 +1,17 @@
-class Solution {
-    fun restoreString(s: String, indices: IntArray): String {
-        var stringResult = String()
-        val result = arrayListOf<Char>()
-        s.forEach {
-            result.add(it)
-        }
-        indices.forEachIndexed { index, _ ->
-            result[indices[index]] = s[index]
-        }
-        result.forEach {
-            stringResult += it
-        }
-        return stringResult
-    }
+classÂ SolutionÂ {
+Â Â Â Â funÂ restoreString(s:Â String,Â indices:Â IntArray):Â StringÂ {
+Â Â Â Â Â Â Â Â varÂ stringResultÂ =Â String()
+Â Â Â Â Â Â Â Â valÂ resultÂ =Â arrayListOf<Char>()
+Â Â Â Â Â Â Â Â s.forEachÂ {
+Â Â Â Â Â Â Â Â Â Â Â Â result.add(it)
+Â Â Â Â Â Â Â Â }
+Â Â Â Â Â Â Â Â indices.forEachIndexedÂ {Â index,Â _Â ->
+Â Â Â Â Â Â Â Â Â Â Â Â result[indices[index]]Â =Â s[index]
+Â Â Â Â Â Â Â Â }
+Â Â Â Â Â Â Â Â result.forEachÂ {
+Â Â Â Â Â Â Â Â Â Â Â Â stringResultÂ +=Â it
+Â Â Â Â Â Â Â Â }
+Â Â Â Â Â Â Â Â returnÂ stringResult
+Â Â Â Â }
+
 "
