@@ -1,11 +1,13 @@
-class Solution {
-    fun firstPalindrome(words: Array<String>): String {
-        for(i in words) {
-            if(i.reversed() == i) {
-                return i
+                } else {
+                    break
+                }
+                if(rightPointer >= leftPointer){
+                    return currentWord
+                }
             }
+            arrayPointer++
         }
-        return ""
+        return String()
     }
 }
 [
