@@ -3,4 +3,5 @@ class Solution {
         return address.replace(".", "[.]")
    
 }
+
 }
