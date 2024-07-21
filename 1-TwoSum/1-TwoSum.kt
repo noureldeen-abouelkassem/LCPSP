@@ -1,10 +1,10 @@
-                left + right == target -> return intArrayOf(nums.indexOfFirst{it == left}, nums.indexOfLast
-{it == right})
-                left + right > target -> rightPointer--
-                left + right < target -> leftPointer++
-            }
-        }
-        return intArrayOf()
-    }
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â leftÂ +Â rightÂ ==Â targetÂ ->Â returnÂ intArrayOf(nums.indexOfFirst{itÂ ==Â left},Â nums.indexOfLast
+{itÂ ==Â right})
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â leftÂ +Â rightÂ >Â targetÂ ->Â rightPointer--
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â leftÂ +Â rightÂ <Â targetÂ ->Â leftPointer++
+Â Â Â Â Â Â Â Â Â Â Â Â }
+Â Â Â Â Â Â Â Â }
+Â Â Â Â Â Â Â Â returnÂ intArrayOf()
+Â Â Â Â }
 }
 [2,7,11,15]
