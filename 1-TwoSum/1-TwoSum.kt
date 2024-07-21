@@ -1,16 +1,10 @@
-Â Â Â Â Â Â Â Â Â Â Â Â whenÂ {
-Â Â Â Â Â Â Â Â Â Â Â Â }
-Â Â Â Â Â Â Â Â }
-Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â leftÂ +Â rightÂ ==Â targetÂ ->Â returnÂ intArrayOf(nums.indexOfFirst{itÂ ==Â left},Â nums.indexOfLast
-Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â leftÂ +Â rightÂ >Â targetÂ ->Â rightPointer--
-Â Â Â Â Â Â Â Â Â Â Â Â valÂ rightÂ =Â numsSorted[rightPointer]
-Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â leftÂ +Â rightÂ <Â targetÂ ->Â leftPointer++
-Â Â Â Â Â Â Â Â Â Â Â Â println(left)
-Â Â Â Â Â Â Â Â Â Â Â Â println(right)
-Â Â Â Â Â Â Â Â returnÂ intArrayOf()
-Â Â Â Â }
-Â Â Â Â Â Â Â Â Â Â Â Â valÂ leftÂ =Â numsSorted[leftPointer]
-Â Â Â Â Â Â Â Â while(leftPointerÂ <Â rightPointer){
-{itÂ ==Â right})
+                left + right == target -> return intArrayOf(nums.indexOfFirst{it == left}, nums.indexOfLast
+{it == right})
+                left + right > target -> rightPointer--
+                left + right < target -> leftPointer++
+            }
+        }
+        return intArrayOf()
+    }
 }
-[
+[2,7,11,15]
