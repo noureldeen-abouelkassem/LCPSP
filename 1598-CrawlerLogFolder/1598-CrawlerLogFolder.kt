@@ -1,13 +1,13 @@
-class Solution {
-    fun minOperations(logs: Array<String>): Int {
-        var level = 0
-        for (l in logs) {
-            when {
-                l[0] != '.' -> level++
-                l[1] == '.' -> if (level > 0) level--
-            }
-        }
-        return level
-    }
+classÂ SolutionÂ {
+Â Â Â Â funÂ minOperations(logs:Â Array<String>):Â IntÂ {
+Â Â Â Â Â Â Â Â varÂ levelÂ =Â 0
+Â Â Â Â Â Â Â Â forÂ (lÂ inÂ logs)Â {
+Â Â Â Â Â Â Â Â Â Â Â Â whenÂ {
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â l[0]Â !=Â '.'Â ->Â level++
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â l[1]Â ==Â '.'Â ->Â ifÂ (levelÂ >Â 0)Â level--
+Â Â Â Â Â Â Â Â Â Â Â Â }
+Â Â Â Â Â Â Â Â }
+Â Â Â Â Â Â Â Â returnÂ level
+Â Â Â Â }
 }
 ["d1/","d2/","../","d21/","./"]
