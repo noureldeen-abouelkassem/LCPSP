@@ -1,12 +1,12 @@
-            .toIntArray()
-            .take(k)
-            .map{ it.second }
-class Solution {
-    fun kWeakestRows(mat: Array<IntArray>, k: Int): IntArray {
-        return mat
-            .map{ it.sum() }
-            .mapIndexed{ index, strength -> Pair(strength, index) }
-            .sortedBy{ it.first }
-    }
+Â Â Â Â Â Â Â Â Â Â Â Â .toIntArray()
+Â Â Â Â Â Â Â Â Â Â Â Â .take(k)
+Â Â Â Â Â Â Â Â Â Â Â Â .map{Â it.secondÂ }
+classÂ SolutionÂ {
+Â Â Â Â funÂ kWeakestRows(mat:Â Array<IntArray>,Â k:Â Int):Â IntArrayÂ {
+Â Â Â Â Â Â Â Â returnÂ mat
+Â Â Â Â Â Â Â Â Â Â Â Â .map{Â it.sum()Â }
+Â Â Â Â Â Â Â Â Â Â Â Â .mapIndexed{Â index,Â strengthÂ ->Â Pair(strength,Â index)Â }
+Â Â Â Â Â Â Â Â Â Â Â Â .sortedBy{Â it.firstÂ }
+Â Â Â Â }
 }
 [
