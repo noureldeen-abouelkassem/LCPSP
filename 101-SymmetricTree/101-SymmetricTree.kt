@@ -1,17 +1,18 @@
- *     var right: TreeNode? = null
- * }
- */
-class Solution {
-    fun isSymmetric(root: TreeNode?): Boolean {
-        return isSymmetric(root?.left, root?.right)
-    }
+Â *Â Â Â Â Â varÂ right:Â TreeNode?Â =Â null
+Â *Â }
+Â */
+classÂ SolutionÂ {
+Â Â Â Â funÂ isSymmetric(root:Â TreeNode?):Â BooleanÂ {
+Â Â Â Â Â Â Â Â returnÂ isSymmetric(root?.left,Â root?.right)
+Â Â Â Â }
 
-    private fun isSymmetric(tree1: TreeNode?, tree2: TreeNode?): Boolean {
-        return when {
-            tree1 == null || tree2 == null -> tree1 == tree2
-            tree1.`val` != tree2.`val` -> false
-            else -> isSymmetric(tree1.left, tree2.right) && isSymmetric(tree2.left, tree1.right)
-        }
-    }
+Â Â Â Â privateÂ funÂ isSymmetric(tree1:Â TreeNode?,Â tree2:Â TreeNode?):Â BooleanÂ {
+Â Â Â Â Â Â Â Â returnÂ whenÂ {
+Â Â Â Â Â Â Â Â Â Â Â Â tree1Â ==Â nullÂ ||Â tree2Â ==Â nullÂ ->Â tree1Â ==Â tree2
+Â Â Â Â Â Â Â Â Â Â Â Â tree1.`val`Â !=Â tree2.`val`Â ->Â false
+Â Â Â Â Â Â Â Â Â Â Â Â elseÂ ->Â isSymmetric(tree1.left,Â tree2.right)Â &&Â isSymmetric(tree2.left,Â tree1.right)
+Â Â Â Â Â Â Â Â }
+Â Â Â Â }
 }
+
 [
