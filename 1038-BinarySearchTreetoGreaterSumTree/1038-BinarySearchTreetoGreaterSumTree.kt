@@ -1,18 +1,18 @@
- *     var left: TreeNode? = null
- *     var right: TreeNode? = null
- * }
- */
-class Solution {
-    fun bstToGst(root: TreeNode?): TreeNode? {
-        traverse(root, 0)
-        return root
-    }
+Â *Â Â Â Â Â varÂ left:Â TreeNode?Â =Â null
+Â *Â Â Â Â Â varÂ right:Â TreeNode?Â =Â null
+Â *Â }
+Â */
+classÂ SolutionÂ {
+Â Â Â Â funÂ bstToGst(root:Â TreeNode?):Â TreeNode?Â {
+Â Â Â Â Â Â Â Â traverse(root,Â 0)
+Â Â Â Â Â Â Â Â returnÂ root
+Â Â Â Â }
 
-    fun traverse(root: TreeNode?, sum: Int): Int {
-        if (root == null) return sum
+Â Â Â Â funÂ traverse(root:Â TreeNode?,Â sum:Â Int):Â IntÂ {
+Â Â Â Â Â Â Â Â ifÂ (rootÂ ==Â null)Â returnÂ sum
 
-        root.`val` += traverse(root.right, sum)
-        return traverse (root.left, root.`val`)
-    } 
+Â Â Â Â Â Â Â Â root.`val`Â +=Â traverse(root.right,Â sum)
+Â Â Â Â Â Â Â Â returnÂ traverseÂ (root.left,Â root.`val`)
+Â Â Â Â }Â 
 }
 [
