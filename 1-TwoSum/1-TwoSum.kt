@@ -1,14 +1,14 @@
-class Solution {
-    fun twoSum(nums: IntArray, target: Int): IntArray {
-        val numsSorted = nums.sorted()
-        var leftPointer = 0
-        var rightPointer = nums.lastIndex
-        while(leftPointer < rightPointer){
-            val left = numsSorted[leftPointer]
-            val right = numsSorted[rightPointer]
-            println(left)
-            println(right)
-            when {
-                left + right == target -> return intArrayOf(nums.indexOfFirst{it == left}, nums.indexOfLast
-{it == right})
+classÂ SolutionÂ {
+Â Â Â Â funÂ twoSum(nums:Â IntArray,Â target:Â Int):Â IntArrayÂ {
+Â Â Â Â Â Â Â Â valÂ numsSortedÂ =Â nums.sorted()
+Â Â Â Â Â Â Â Â varÂ leftPointerÂ =Â 0
+Â Â Â Â Â Â Â Â varÂ rightPointerÂ =Â nums.lastIndex
+Â Â Â Â Â Â Â Â while(leftPointerÂ <Â rightPointer){
+Â Â Â Â Â Â Â Â Â Â Â Â valÂ leftÂ =Â numsSorted[leftPointer]
+Â Â Â Â Â Â Â Â Â Â Â Â valÂ rightÂ =Â numsSorted[rightPointer]
+Â Â Â Â Â Â Â Â Â Â Â Â println(left)
+Â Â Â Â Â Â Â Â Â Â Â Â println(right)
+Â Â Â Â Â Â Â Â Â Â Â Â whenÂ {
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â leftÂ +Â rightÂ ==Â targetÂ ->Â returnÂ intArrayOf(nums.indexOfFirst{itÂ ==Â left},Â nums.indexOfLast
+{itÂ ==Â right})
 [2,7,11,15]
