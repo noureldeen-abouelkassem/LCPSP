@@ -12,4 +12,4 @@ class Solution {
                 left + right == target -> return intArrayOf(nums.indexOfFirst{it == left}, nums.indexOfLast
 {it == right})
 [2,7,11,15]
-            
+          
