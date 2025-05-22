@@ -1,11 +1,13 @@
 class Solution {
     func isPalindrome(_ x: Int) -> Bool {
          let stringX: String = String(x)
+        let charactersX: [Character] = Array(stringX)
+        
         var leftPointer: Int = 0
-        var rightPointer: Int = stringX.count - 1
+        var rightPointer: Int = charactersX.count - 1
         
         while leftPointer < rightPointer {
-            if stringX[stringX.index(stringX.startIndex, offsetBy: leftPointer)] != stringX[stringX.index(stringX.startIndex, offsetBy: rightPointer)] {
+            if charactersX[leftPointer] != charactersX[rightPointer] {
                 return false
             }
             leftPointer += 1
