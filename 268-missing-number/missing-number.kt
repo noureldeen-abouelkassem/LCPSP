@@ -1,5 +1,10 @@
 class Solution {
     fun missingNumber(nums: IntArray): Int {
-        return (0..nums.size).toMutableList().subtract(nums.sorted().toSet()).lastOrNull() ?: 0 
+        var answer = 0 
+        for (n in nums) {
+            answer += n
+        }
+        val size = nums.size
+        return ((size * (size + 1))/2) - answer
     }
 }
