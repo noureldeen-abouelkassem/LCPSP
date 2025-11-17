@@ -4,14 +4,14 @@ class Solution {
         if (s.toSet().size == s.length) return s.length
         var length = 0
         val set = hashSetOf<Char>()
-        var windowStart = 0
-        for (windowEnd in 0..s.lastIndex) {
-            while (set.contains(s[windowEnd])) {
-                set.remove(s[windowStart])
-                windowStart++
+        var windowEnd = 0
+        for (windowStart in 0..s.lastIndex) {
+            while (set.contains(s[windowStart])) {
+                set.remove(s[windowEnd])
+                windowEnd++
             }
-            set.add(s[windowEnd])
-            length = maxOf(length, (windowEnd - windowStart) + 1)
+            set.add(s[windowStart])
+            length = maxOf(length, (windowStart - windowEnd) + 1)
         }
         return length
     }
